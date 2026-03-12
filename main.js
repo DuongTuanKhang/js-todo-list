@@ -103,7 +103,8 @@ function addTask(e) {
 // Hiển thị danh sách công việc
 function renderTasks() {
   if (!tasks.length) {
-    taskList.innerHTML = '<li class="empty-message">No tasks available.</li>'; // Hiển thị thông báo nếu danh sách rỗng
+    taskList.innerHTML =
+      '<div class="empty-messages">No tasks available.</div>'; // Hiển thị thông báo nếu danh sách rỗng
     return;
   }
 
